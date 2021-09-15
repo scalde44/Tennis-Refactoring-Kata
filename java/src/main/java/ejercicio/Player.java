@@ -2,12 +2,12 @@ package ejercicio;
 
 public class Player {
     private String name;
-    private String res;
+    private Score res;
     private int point;
 
     public Player(String name) {
         this.name = name;
-        this.res = "";
+        this.res = Score.Love;
         this.point = 0;
     }
 
@@ -15,7 +15,7 @@ public class Player {
         return name;
     }
 
-    public String getRes() {
+    public Score getRes() {
         return res;
     }
 
@@ -27,7 +27,7 @@ public class Player {
         point++;
     }
 
-    public void setRes(String res) {
+    public void setRes(Score res) {
         this.res = res;
     }
 }
